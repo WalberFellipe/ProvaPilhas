@@ -44,11 +44,28 @@ function ins(obj) {
 
 function remove(index, local){
     if(local === 'A') {
+        localA.slice(index,1)
+    }
+    else if(local === 'B') {
+        localB.slice(index,1)
+    }
+    else if(local === 'C') {
+        localC.slice(index,1)
 
+    }
+    else{
+        localD.slice(index,1)
     }
 
 }
 
-add('Container1')
+add('Container1');
+add('Container2');
+add('Container3');
+add('Container4');
 
-console.log(localD)
+console.log(localA)
+
+remove(1,'A');
+
+console.log(localA)
